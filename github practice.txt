@@ -1,28 +1,20 @@
 ### Local depository cloning
-1. git clone git@github.com:matveyvolodin/matveyvolodin.git
-2. git clone git@github.com:testrusau/testrusau.git
-3. cp -r ~/Desktop/GitHub_repo/testrusau/* ~/Desktop/GitHub_repo/matveyvolodin
-4. git commit -m "Info update"
-5. git commit -m "Tools update"
-5. git commit -m "Testing artifacts update"
-6. git commit -m "Contacts update"
-7. git push "Portfolio uploaded"
-8. $ mkdir testing_documentation
-	cd testing_documentation
-		git init
-			touch README.md
-				git add README.md
-				git commit
+git clone git@github.com:matveyvolodin/matveyvolodin.git
+git clone git@github.com:testrusau/testrusau.git
+cp -r ~/Desktop/GitHub_repo/testrusau/* ~/Desktop/GitHub_repo/matveyvolodin
+git add .
+git commit -m "info updated"
+git commit -m "contacts updated"
+git push matveyvolodin main
 
 ### Initializing an api_testing Git repository via VS Code Terminal
  
-Steps:
-1. git init api_testing
-2. Petstore API test cases.pdf is manualy copied to api_testing dirrectory
-3. touch README.md
-4. README.md is manually edited in VS Code
-5. git add .
-6. git commit -m "initial commit"
-7. git remote add api_testing git@github.com:matveyvolodin/api_testing.git
-8. git remote -v
-9. git push api_testing main
+git init api_testing -b main
+Petstore API test cases.pdf is manualy copied to api_testing dirrectory
+touch README.md
+README.md is manually edited in VS Code
+git add .
+git commit -m "initial commit"
+git remote add api_testing git@github.com:matveyvolodin/api_testing.git
+git remote -v
+git push api_testing main
